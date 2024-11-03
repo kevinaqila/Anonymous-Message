@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <title>Anonymous Message</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Formulir Pesan -->
+        <form id="messageForm">
+            <h1>Anonymous Message</h1>
+            <p>Enter Your Message</p>
+            <div class="input-box">
+                <input id="message" placeholder="Tulis pesan di sini..." />
+            </div>
+            <button id="generateLink">Get Link</button>
+        </form>
+
+        <!-- Tempat untuk Tautan Hasil -->
+        <div id="linkOutput" class="hidden"></div> <!-- Tersembunyi awalnya -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body style */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(https://img.freepik.com/free-vector/blue-fluid-background_53876-114597.jpg?uid=R147690978&ga=GA1.1.2106973153.1716264386&semt=ais_siglip);
+  /* background: linear-gradient(120deg, #89f7fe, #66a6ff); */
+  background-size: cover;
+  animation: gradientBG 5s ease infinite;
+}
+
+/* Container styling */
+.container {
+  width: 420px;
+  background-color: rgb(45, 141, 144);
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styling */
+.container h1 {
+  font-size: 33px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Input box styling */
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(28, 7, 7, 0.2);
+  border-radius: 40px;
+  color: #755050;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-box input:focus {
+  border-image: linear-gradient(45deg, #06beb6, #48b1bf) 1;
+  outline: none;
+  box-shadow: 0 0 10px rgba(72, 177, 191, 0.5);
+}
+
+.input-box input::placeholder {
+  color: #241e1e;
+}
+
+/* Button styling */
+.container button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #333;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Gaya untuk linkOutput ketika muncul */
+#linkOutput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+
+#linkOutput a {
+  font-size: 20px;
+  color: #06beb6;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow-wrap: break-word; /* Tambahkan ini untuk mencegah teks meluap */
+  word-wrap: break-word; /* Alternatif untuk kompatibilitas */
+  max-width: 100%; /* Pastikan elemen tidak melebihi lebar container */
+}
+
+#linkOutput a:hover {
+  color: #48b1bf;
+}
+
+/* Atur form tersembunyi dengan class hidden */
+.hidden {
+  display: none;
+}
+
+
+/* Gradient animation */
+/* @keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
